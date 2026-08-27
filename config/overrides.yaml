@@ -1,0 +1,46 @@
+dataConnectors:
+  temporal:
+    address: temporal:7233
+endpoints:
+  activityJob:
+    enabled: true
+  fanOutActivityA:
+    enabled: true
+  fanOutActivityB:
+    enabled: true
+  fanOutActivityC:
+    enabled: true
+  fanOutWorkflowJob:
+    enabled: true
+  localSchedule:
+    enabled: true
+  sequentialActivityA:
+    enabled: true
+  sequentialActivityB:
+    enabled: true
+  temporalActivitySchedule:
+    enabled: true
+  temporalWorkflowSchedule:
+    enabled: true
+  workflowJob:
+    enabled: true
+pools:
+  defaultPool:
+    executorsCount: 2
+services:
+  automationService:
+    defaultGrpcTimeout: 0
+    environment: ""
+    grpcHost: 0.0.0.0
+    grpcPort: 9204
+    httpHost: 0.0.0.0
+    httpPort: 9094
+streams:
+  activityPause:
+    duration: 250
+  scheduledActivityPause:
+    duration: 250
+  scheduledWorkflowPause:
+    duration: 250
+  workflowPause:
+    duration: 250
