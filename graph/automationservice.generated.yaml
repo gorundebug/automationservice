@@ -231,6 +231,7 @@ dataConnectors:
         tlsEnabled: false
         type: Temporal
         typeScriptImplementation: temporal/typescript
+        workerStopTimeout: 5000
 pools:
     defaultPool:
         executorsCount: 2
@@ -744,7 +745,7 @@ services:
         startupHandler: health/startup
         statusHandler: status
 settings:
-    moduleVersion: v0.2.59
+    moduleVersion: v0.2.60
     name: Example
     repoPath: github.com/gorundebug/goexample
 types:
